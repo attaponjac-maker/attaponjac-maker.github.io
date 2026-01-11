@@ -1,67 +1,99 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Pages Test</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f2f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            color: #333;
-        }
-        .container {
-            text-align: center;
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            max-width: 400px;
-            width: 90%;
-        }
-        .icon {
-            font-size: 60px;
-            margin-bottom: 20px;
-        }
-        h1 {
-            color: #2da44e; /* GitHub Green */
-            margin: 0 0 10px 0;
-        }
-        p {
-            line-height: 1.6;
-            color: #666;
-        }
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #0969da;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-        }
-        .btn:hover {
-            background-color: #064d9e;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Modern Organization</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <div class="icon">🚀</div>
-        <h1>app สไตล์คนขี้เกียจ!</h1>
-        <p>ระบบจัดการการขนส่ง NR Shipments โดย บริษัท แอล.ที.การยาง จำกัด มุ่งเน้นความถูกต้องและรวดเร็วในการจัดการข้อมูลสินค้า</p><p>app สร้างฟอร์มบิลตาชั่ง</a>
-        <p style="font-size: 0.9em; border-top: 1px solid #eee; padding-top: 10px; margin-top: 15px;">
-            แก้ไขไฟล์ <code>index.html</code> เพื่อเริ่มสร้างหน้าเว็บจริงของคุณ
-copy; 2026 dev. by J-attapon All rights reserved.
-        </p>
-    </div>
+<nav class="navbar">
+  <h1 class="logo">ModernCorp</h1>
+  <ul>
+    <li>Home</li>
+    <li>Services</li>
+    <li>About</li>
+    <li>Contact</li>
+  </ul>
+</nav>
 
+<section class="hero">
+  <h2>องค์กรยุคใหม่ ขับเคลื่อนด้วยเทคโนโลยี</h2>
+  <p>Professional • Modern • Reliable</p>
+  <button class="btn">เริ่มต้นใช้งาน</button>
+</section>
+
+<section class="grid">
+  <div class="card">
+    <h3>Smart System</h3>
+    <p>ระบบอัจฉริยะ รองรับการเติบโต</p>
+  </div>
+  <div class="card">
+    <h3>Modern Design</h3>
+    <p>ดีไซน์ทันสมัย ตอบโจทย์องค์กร</p>
+  </div>
+  <div class="card">
+    <h3>Secure Data</h3>
+    <p>ปลอดภัย มาตรฐานสากล</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 ModernCorp
+</footer>
+body {
+  margin: 0;
+  font-family: 'Kanit', sans-serif;
+  background: #F8FAFC;
+  color: #1E293B;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: #0F172A;
+  color: white;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #2563EB, #1E40AF);
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 30px;
+  padding: 80px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0F172A;
+  color: #CBD5E1;
+}
 </body>
 </html>
